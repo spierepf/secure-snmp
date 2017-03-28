@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh -oStrictHostKeyChecking=no daa@securesnmp_daa_1
+socat "TCP:localhost:161" EXEC:"ssh -oStrictHostKeyChecking=no daa@securesnmp_daa_1"
